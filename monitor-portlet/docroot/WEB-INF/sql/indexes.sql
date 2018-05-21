@@ -1,0 +1,1 @@
+create index IX_A0B92BFA on monitoring (field2);
