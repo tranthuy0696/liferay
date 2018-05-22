@@ -2,19 +2,10 @@ package com.monitor.portlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.lang.management.ManagementFactory;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.portlet.PortletException;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.util.bridges.mvc.MVCPortlet;
-import com.monitor.portlet.entity.service.FooLocalServiceUtil;
-import com.monitoring.Monitoring;
+import java.lang.management.ManagementFactory;
 
 /**
  * Portlet implementation class monitorAction
