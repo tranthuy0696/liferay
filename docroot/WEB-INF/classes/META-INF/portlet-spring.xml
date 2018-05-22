@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.monitor.portlet.entity.service.CpuLocalService" class="com.monitor.portlet.entity.service.impl.CpuLocalServiceImpl" />
+	<bean id="com.monitor.portlet.entity.service.CpuService" class="com.monitor.portlet.entity.service.impl.CpuServiceImpl" />
+	<bean id="com.monitor.portlet.entity.service.persistence.CpuPersistence" class="com.monitor.portlet.entity.service.persistence.CpuPersistenceImpl" parent="basePersistence" />
+	<bean id="com.monitor.portlet.entity.service.FooLocalService" class="com.monitor.portlet.entity.service.impl.FooLocalServiceImpl" />
+	<bean id="com.monitor.portlet.entity.service.FooService" class="com.monitor.portlet.entity.service.impl.FooServiceImpl" />
+	<bean id="com.monitor.portlet.entity.service.persistence.FooPersistence" class="com.monitor.portlet.entity.service.persistence.FooPersistenceImpl" parent="basePersistence" />
+	<bean id="com.monitor.portlet.entity.service.RamLocalService" class="com.monitor.portlet.entity.service.impl.RamLocalServiceImpl" />
+	<bean id="com.monitor.portlet.entity.service.RamService" class="com.monitor.portlet.entity.service.impl.RamServiceImpl" />
+	<bean id="com.monitor.portlet.entity.service.persistence.RamPersistence" class="com.monitor.portlet.entity.service.persistence.RamPersistenceImpl" parent="basePersistence" />
+</beans>
