@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.service.serviceBuilder.model.Cpu">
+		<field name="cpuId" type="long" />
+		<field name="time" type="Date" />
+		<field name="min" type="double" />
+		<field name="max" type="double" />
+		<field name="aver" type="double" />
+	</model>
+	<model name="com.service.serviceBuilder.model.Ram">
+		<field name="ramId" type="long" />
+		<field name="time" type="Date" />
+		<field name="min" type="double" />
+		<field name="max" type="double" />
+		<field name="aver" type="double" />
+	</model>
+</model-hints>

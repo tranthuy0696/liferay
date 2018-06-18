@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.service.serviceBuilder">
+	<author>NgocBao</author>
+	<namespace>Monitoring</namespace>
+
+	<entity name="Ram" local-service="true" remote-service="true" cache-enabled="false" table="Ram">
+
+		<!-- PK fields -->
+
+		<column name="ramId" type="long" primary="true" id-type="increment"/>
+		<column name="time" type="Date" />
+		<column name="min" type="double" />
+		<column name="max" type="double" />
+		<column name="aver" type="double" />
+		<order by="asc">
+			<order-column name="ramId" />
+		</order>
+
+	</entity>
+	<entity name="Cpu" local-service="true" remote-service="true" cache-enabled="false" table="Cpu">
+
+		<!-- PK fields -->
+
+		<column name="cpuId" type="long" primary="true" id-type="increment" />
+		<column name="time" type="Date" />
+		<column name="min" type="double" />
+		<column name="max" type="double" />
+		<column name="aver" type="double" />
+		<order by="asc">
+			<order-column name="cpuId" />
+		</order>
+
+	</entity>
+	
+</service-builder>
