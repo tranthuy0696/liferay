@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+
+<project name="MonitoringPluginService-portlet" basedir="." default="deploy">
+	<import file="../build-common-portlet.xml" />
+	<target name="build-service-monitoring">
+			<antcall target="build-service">
+				<param name="service.input.file" value="docroot/WEB-INF/src/com/nlu/entity/service.xml" />
+			</antcall>
+		</target>
+</project>
