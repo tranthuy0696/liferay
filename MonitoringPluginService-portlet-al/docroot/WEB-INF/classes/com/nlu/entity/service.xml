@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.nlu.entity">
+	<author>NgocBao</author>
+	<namespace>monitoring</namespace>
+
+	
+	<entity name="Alarm" local-service="true"
+		remote-service="true" cache-enabled="false" table="Alarm">
+
+		<!-- PK fields -->
+
+		<column name="alarmId" type="long" primary="true" id-type="increment" />
+		<column name="name" type="String" />
+		<column name="startTime" type="int" />
+		<column name="endTime" type="int" />
+		<column name="value" type="double" />
+
+	</entity>
+	<entity name="AlarmInfo" local-service="true"
+		remote-service="true" cache-enabled="false" table="AlarmInfo">
+
+		<!-- PK fields -->
+
+		<column name="alarmInfoId" type="long" primary="true" id-type="increment" />
+		<column name="name" type="String" />
+		<column name="mail" type="String" />
+		<finder return-type="Collection" name="name">
+			<finder-column name="name" comparator="LIKE"></finder-column>
+		</finder>
+
+	</entity>
+	
+
+
+</service-builder>

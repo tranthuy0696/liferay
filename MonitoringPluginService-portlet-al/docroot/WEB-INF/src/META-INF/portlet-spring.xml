@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.nlu.entity.service.AlarmLocalService" class="com.nlu.entity.service.impl.AlarmLocalServiceImpl" />
+	<bean id="com.nlu.entity.service.AlarmService" class="com.nlu.entity.service.impl.AlarmServiceImpl" />
+	<bean id="com.nlu.entity.service.persistence.AlarmPersistence" class="com.nlu.entity.service.persistence.AlarmPersistenceImpl" parent="basePersistence" />
+	<bean id="com.nlu.entity.service.persistence.AlarmFinder" class="com.nlu.entity.service.persistence.AlarmFinderImpl" parent="basePersistence" />
+	<bean id="com.nlu.entity.service.AlarmInfoLocalService" class="com.nlu.entity.service.impl.AlarmInfoLocalServiceImpl" />
+	<bean id="com.nlu.entity.service.AlarmInfoService" class="com.nlu.entity.service.impl.AlarmInfoServiceImpl" />
+	<bean id="com.nlu.entity.service.persistence.AlarmInfoPersistence" class="com.nlu.entity.service.persistence.AlarmInfoPersistenceImpl" parent="basePersistence" />
+</beans>

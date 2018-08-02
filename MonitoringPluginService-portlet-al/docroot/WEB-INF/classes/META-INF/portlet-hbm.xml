@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.nlu.entity.model.Alarm" />
+	<import class="com.nlu.entity.model.AlarmInfo" />
+	<class name="com.nlu.entity.model.impl.AlarmImpl" table="Alarm">
+		<id name="alarmId" type="long">
+			<generator class="increment" />
+		</id>
+		<property name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="startTime" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="endTime" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="value" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+	</class>
+	<class name="com.nlu.entity.model.impl.AlarmInfoImpl" table="AlarmInfo">
+		<id name="alarmInfoId" type="long">
+			<generator class="increment" />
+		</id>
+		<property name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="mail" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

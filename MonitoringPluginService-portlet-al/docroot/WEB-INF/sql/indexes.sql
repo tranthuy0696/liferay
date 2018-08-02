@@ -1,0 +1,1 @@
+create index IX_9F95DA84 on AlarmInfo (name);
