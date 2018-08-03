@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.nlu.entity.model.Alarm">
+		<field name="alarmId" type="long" />
+		<field name="name" type="String" />
+		<field name="startTime" type="int" />
+		<field name="endTime" type="int" />
+		<field name="value" type="double" />
+	</model>
+	<model name="com.nlu.entity.model.AlarmInfo">
+		<field name="alarmInfoId" type="long" />
+		<field name="name" type="String" />
+		<field name="mail" type="String" />
+	</model>
+</model-hints>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+
+<sql id="com.nlu.entity.service.persistence.AlarmFinder.getAlarmByTime">
+<![CDATA[
+SELECT *
+FROM Alarm
+WHERE endtime >= [$value] and starttime <= [$value] and name like '[$name]'
+]]>
+</sql>
+
+</custom-sql>
